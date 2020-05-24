@@ -1,12 +1,12 @@
 import java.util.Random;
 import java.util.Scanner;
+
 public class Yahtzee {
-    Scanner sc = new Scanner(System.in);
 
     //Worp1: 5 dobbelstenen
     public static void main(String[] args) {
         System.out.println("Welkom bij Yahtzee");
-        new Yahtzee().spelen();
+        new YahtzeeSpel().spelen();
         System.out.println("Bedankt voor het spelen");
 
         //1. bepaal je funcionele doelstelling
@@ -26,21 +26,7 @@ public class Yahtzee {
         //for
         //if ----
     }
-    public void spelen() {
-        for (; true; ) {
-            System.out.println("Wat is uw invoer?");
-            String invoer = sc.nextLine();
-            if (invoer.equals("q")) {
-                System.out.println("jammer");
-                break;
-            } else {
-                System.out.println("nog een rondje");
-                Random r = new Random();
-                int cijfer = r.nextInt(6) +1;
-                System.out.println(cijfer);
-            }
-        }
-    }
+
 }
 
 
